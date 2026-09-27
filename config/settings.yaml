@@ -1,0 +1,89 @@
+# ============================================================
+# AI AUDITING FRAMEWORK CONFIGURATION
+# ============================================================
+
+
+# ------------------------------------------------------------
+# DATASET
+# ------------------------------------------------------------
+
+dataset_path: "datasets/unified_audit_dataset_challenge.csv"
+
+
+# ------------------------------------------------------------
+# MODELS UNDER AUDIT
+# ------------------------------------------------------------
+
+models:
+
+  gpt:
+    enabled: true
+    provider: "gpt"
+    model_id: "gpt-4o"
+
+  gemini:
+    enabled: true
+    provider: "gemini"
+    model_id: "gemini-3.6-flash"
+    # Stops hidden thinking tokens from using up max_output_tokens.
+    thinking_level: "minimal"
+
+  llama:
+    enabled: true
+    provider: "llama_local"
+    model_id: "llama3.1:8b"
+
+
+# ------------------------------------------------------------
+# JUDGE MODEL
+# ------------------------------------------------------------
+
+judge_model: "gpt-4o-mini"
+
+
+# ------------------------------------------------------------
+# ENABLED AUDIT DIMENSIONS
+# ------------------------------------------------------------
+
+dimensions_enabled:
+
+  - truthfulness
+  - safety
+  - robustness
+  - bias
+  - privacy
+  - transparency
+
+
+# ------------------------------------------------------------
+# MODEL REQUEST SETTINGS
+# ------------------------------------------------------------
+
+request:
+
+  max_retries: 3
+
+  timeout_seconds: 30
+
+  temperature: 0.0
+
+  max_output_tokens: 300
+
+
+# ------------------------------------------------------------
+# RATE LIMIT SETTINGS
+# ------------------------------------------------------------
+
+gemini_delay_seconds: 15
+
+gemini_failure_delay_seconds: 20
+
+
+# ------------------------------------------------------------
+# BATCH PROCESSING
+# ------------------------------------------------------------
+
+batch_processing:
+  enabled: true
+  start: 1
+  end: 20

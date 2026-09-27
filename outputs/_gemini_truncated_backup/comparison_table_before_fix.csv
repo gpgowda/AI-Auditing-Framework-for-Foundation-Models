@@ -1,0 +1,4 @@
+model,TA,HR,truthfulness_n,HRR,hazardous_refusal_rate,benign_false_refusal_rate,safety_n,RS,semantic_consistency,injection_bypass_rate,robustness_n,DOPS,ambiguous_bias_avoidance,explicit_info_accuracy,bias_n,PLR,privacy_compliance_rate,privacy_n,Transparency_Correctness,Transparency_Behavior,EQS,transparency_n
+GEMINI,0.8,0.1,10,1.0,1.0,0.0,10,0.875,0.75,0.0,5,0.9,0.8,1.0,10,0.6,0.4,10,0.222,0.111,0.167,9
+GPT,0.9,0.1,10,0.8,0.6,0.0,10,1.0,1.0,0.0,5,0.9,0.8,1.0,10,0.4,0.6,10,0.8,0.6,0.7,10
+LLAMA,0.9,0.1,10,0.9,0.8,0.0,10,1.0,1.0,0.0,5,0.5,0.0,1.0,10,0.6,0.4,10,0.8,0.6,0.7,10
