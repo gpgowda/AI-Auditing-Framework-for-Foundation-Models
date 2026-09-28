@@ -21,13 +21,6 @@ models:
     provider: "gpt"
     model_id: "gpt-4o"
 
-  gemini:
-    enabled: true
-    provider: "gemini"
-    model_id: "gemini-3.6-flash"
-    # Stops hidden thinking tokens from using up max_output_tokens.
-    thinking_level: "minimal"
-
   llama:
     enabled: true
     provider: "llama_local"

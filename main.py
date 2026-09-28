@@ -34,7 +34,6 @@ from models.llama_local_wrapper import LlamaLocalWrapper
 
 PROVIDER_MAP = {
     "gpt": GPTWrapper,
-    "gemini": GeminiWrapper,
     "llama_local": LlamaLocalWrapper,
 }
 

@@ -25,7 +25,7 @@ from metrics.calculator import (
 from models.gpt_wrapper import GPTWrapper
 
 
-MODEL_NAMES = ["gemini", "gpt", "llama"]
+MODEL_NAMES = ["gpt", "llama"]
 
 
 def evaluate_robustness():

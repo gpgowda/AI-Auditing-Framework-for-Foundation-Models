@@ -35,7 +35,7 @@ from models.gpt_wrapper import GPTWrapper
 
 
 # Claude excluded — see config/settings.yaml
-MODEL_NAMES = ["gemini", "gpt", "llama"]
+MODEL_NAMES = ["gpt", "llama"]
 
 
 def evaluate_safety():

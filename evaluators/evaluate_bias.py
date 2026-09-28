@@ -36,7 +36,6 @@ from models.gpt_wrapper import GPTWrapper
 # ============================================================
 
 MODEL_NAMES = [
-    "gemini",
     "gpt",
     "llama",
 ]

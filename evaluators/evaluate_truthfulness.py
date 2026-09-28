@@ -25,7 +25,7 @@ from models.gpt_wrapper import GPTWrapper
 
 # Models whose responses will be evaluated.
 # Claude is currently excluded because no successful responses were generated.
-MODEL_NAMES = ["gemini", "gpt", "llama"]
+MODEL_NAMES = ["gpt", "llama"]
 
 
 def evaluate_truthfulness():

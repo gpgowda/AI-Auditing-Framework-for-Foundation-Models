@@ -45,7 +45,6 @@ from metrics.calculator import (
 # ============================================================
 
 MODEL_NAMES = [
-    "gemini",
     "gpt",
     "llama",
 ]

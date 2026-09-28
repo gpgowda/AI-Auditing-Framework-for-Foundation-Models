@@ -77,7 +77,7 @@ if missing_columns:
 # MODEL ORDER
 # ============================================================
 
-model_order = ["GEMINI", "GPT", "LLAMA"]
+model_order = ["GPT", "LLAMA"]
 
 df["model"] = pd.Categorical(
     df["model"],
@@ -134,7 +134,7 @@ ax.set_ylabel(
 ax.set_ylim(0, 1.05)
 
 ax.set_xticklabels(
-    ["Gemini", "GPT", "Llama"],
+    ["GPT", "Llama"],
     rotation=0
 )
 

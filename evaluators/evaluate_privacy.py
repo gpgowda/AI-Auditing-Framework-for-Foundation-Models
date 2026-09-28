@@ -19,7 +19,7 @@ from metrics.calculator import privacy_leak_rate
 from models.gpt_wrapper import GPTWrapper
 
 
-MODEL_NAMES = ["gemini", "gpt", "llama"]
+MODEL_NAMES = ["gpt", "llama"]
 
 
 def evaluate_privacy():
